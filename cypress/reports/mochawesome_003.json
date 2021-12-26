@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 2,
-    "start": "2021-12-23T16:41:03.538Z",
-    "end": "2021-12-23T16:41:07.231Z",
-    "duration": 3693,
+    "start": "2021-12-26T01:11:56.059Z",
+    "end": "2021-12-26T01:12:12.410Z",
+    "duration": 16351,
     "testsRegistered": 2,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "49be595e-1bcb-4254-ad8b-918492c9b1b4",
+      "uuid": "cbaf9bed-3ca3-4508-a84e-fe3f2ca56a13",
       "title": "",
       "fullFile": "cypress/integration/developerMode.spec.js",
       "file": "cypress/integration/developerMode.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "5bfd865c-2609-4193-a5f5-0079bbdd9246",
+          "uuid": "23022c98-765c-4fd5-b6d6-7e42ffb1929f",
           "title": "3 - Verifica os multi-ambientes e modo de desenvolvimento",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Será validado que a tag de desenvolvimento foi encontrada no frontend de desenvolvimento",
               "fullTitle": "3 - Verifica os multi-ambientes e modo de desenvolvimento Será validado que a tag de desenvolvimento foi encontrada no frontend de desenvolvimento",
               "timedOut": null,
-              "duration": 1830,
+              "duration": 12551,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -47,12 +47,12 @@
               "context": null,
               "code": "cy.visit(FRONT_URL);\ncy.contains(\"Em desenvolvimento\").should(\"exist\");",
               "err": {
-                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://undefined-ft.herokuapp.com/.\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
-                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://undefined-ft.herokuapp.com/.\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at http://localhost:37829/__cypress/runner/cypress_runner.js:158062:25\n    at visitFailedByErr (http://localhost:37829/__cypress/runner/cypress_runner.js:157432:12)\n    at http://localhost:37829/__cypress/runner/cypress_runner.js:158042:13\n    at tryCatcher (http://localhost:37829/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://localhost:37829/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://localhost:37829/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://localhost:37829/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://localhost:37829/__cypress/runner/cypress_runner.js:8438:18)\n    at _drainQueueStep (http://localhost:37829/__cypress/runner/cypress_runner.js:5032:12)\n    at _drainQueue (http://localhost:37829/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:37829/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (http://localhost:37829/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:37829/__cypress/tests?p=cypress/integration/developerMode.spec.js:103:8)",
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Em desenvolvimento' but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Em desenvolvimento' but never did.\n    at Context.eval (https://guidev-ft.herokuapp.com/__cypress/tests?p=cypress/integration/developerMode.spec.js:104:39)",
                 "diff": null
               },
-              "uuid": "a7720f6f-667a-4c3c-8332-6e513caa0bd7",
-              "parentUUID": "5bfd865c-2609-4193-a5f5-0079bbdd9246",
+              "uuid": "bef24494-ed19-45cf-922c-4456ac8231d7",
+              "parentUUID": "23022c98-765c-4fd5-b6d6-7e42ffb1929f",
               "isHook": false,
               "skipped": false
             },
@@ -60,7 +60,7 @@
               "title": "Será validado que a tag de desenvolvimento não existe no frontend de produção",
               "fullTitle": "3 - Verifica os multi-ambientes e modo de desenvolvimento Será validado que a tag de desenvolvimento não existe no frontend de produção",
               "timedOut": null,
-              "duration": 1693,
+              "duration": 906,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -69,12 +69,12 @@
               "context": null,
               "code": "cy.visit(FRONT_URL_PROD);\ncy.contains(\"Em desenvolvimento\").should(\"not.exist\");",
               "err": {
-                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://undefined-pd.herokuapp.com/.\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
-                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://undefined-pd.herokuapp.com/.\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at http://localhost:37829/__cypress/runner/cypress_runner.js:158062:25\n    at visitFailedByErr (http://localhost:37829/__cypress/runner/cypress_runner.js:157432:12)\n    at http://localhost:37829/__cypress/runner/cypress_runner.js:158042:13\n    at tryCatcher (http://localhost:37829/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (http://localhost:37829/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (http://localhost:37829/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (http://localhost:37829/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (http://localhost:37829/__cypress/runner/cypress_runner.js:8438:18)\n    at _drainQueueStep (http://localhost:37829/__cypress/runner/cypress_runner.js:5032:12)\n    at _drainQueue (http://localhost:37829/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:37829/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (http://localhost:37829/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:37829/__cypress/tests?p=cypress/integration/developerMode.spec.js:107:8)",
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://guidev-pd.herokuapp.com/.\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://guidev-pd.herokuapp.com/.\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at https://guidev-ft.herokuapp.com/__cypress/runner/cypress_runner.js:158062:25\n    at visitFailedByErr (https://guidev-ft.herokuapp.com/__cypress/runner/cypress_runner.js:157432:12)\n    at https://guidev-ft.herokuapp.com/__cypress/runner/cypress_runner.js:158042:13\n    at tryCatcher (https://guidev-ft.herokuapp.com/__cypress/runner/cypress_runner.js:10325:23)\n    at Promise._settlePromiseFromHandler (https://guidev-ft.herokuapp.com/__cypress/runner/cypress_runner.js:8260:31)\n    at Promise._settlePromise (https://guidev-ft.herokuapp.com/__cypress/runner/cypress_runner.js:8317:18)\n    at Promise._settlePromise0 (https://guidev-ft.herokuapp.com/__cypress/runner/cypress_runner.js:8362:10)\n    at Promise._settlePromises (https://guidev-ft.herokuapp.com/__cypress/runner/cypress_runner.js:8438:18)\n    at _drainQueueStep (https://guidev-ft.herokuapp.com/__cypress/runner/cypress_runner.js:5032:12)\n    at _drainQueue (https://guidev-ft.herokuapp.com/__cypress/runner/cypress_runner.js:5025:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://guidev-ft.herokuapp.com/__cypress/runner/cypress_runner.js:5041:5)\n    at Async.drainQueues (https://guidev-ft.herokuapp.com/__cypress/runner/cypress_runner.js:4911:14)\nFrom Your Spec Code:\n    at Context.eval (https://guidev-ft.herokuapp.com/__cypress/tests?p=cypress/integration/developerMode.spec.js:107:8)",
                 "diff": null
               },
-              "uuid": "84fc8a41-742f-4dab-aefc-ff966f1f3d56",
-              "parentUUID": "5bfd865c-2609-4193-a5f5-0079bbdd9246",
+              "uuid": "2ef996eb-6874-4b17-ab0c-ad0f643e13c6",
+              "parentUUID": "23022c98-765c-4fd5-b6d6-7e42ffb1929f",
               "isHook": false,
               "skipped": false
             }
@@ -82,12 +82,12 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "a7720f6f-667a-4c3c-8332-6e513caa0bd7",
-            "84fc8a41-742f-4dab-aefc-ff966f1f3d56"
+            "bef24494-ed19-45cf-922c-4456ac8231d7",
+            "2ef996eb-6874-4b17-ab0c-ad0f643e13c6"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 3523,
+          "duration": 13457,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
