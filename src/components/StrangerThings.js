@@ -14,16 +14,14 @@ const {
   REACT_APP_UPSIDEDOWN_TIMEOUT,
 } = process.env;
 
-const timeOUT = 30000;
-
 const strangerThingsConfig = {
-  url: 'http://localhost:3002' || REACT_APP_HAWKINS_URL,
-  timeout: timeOUT || REACT_APP_HAWKINS_TIMEOUT,
+  url: REACT_APP_HAWKINS_URL,
+  timeout: REACT_APP_HAWKINS_TIMEOUT,
 };
 
 const upsideDownConfig = {
-  url: 'http://localhost:3003' || REACT_APP_UPSIDEDOWN_URL,
-  timeout: timeOUT || REACT_APP_UPSIDEDOWN_TIMEOUT,
+  url: REACT_APP_UPSIDEDOWN_URL,
+  timeout: REACT_APP_UPSIDEDOWN_TIMEOUT,
 };
 
 const charactersService = new CharactersService(strangerThingsConfig);
