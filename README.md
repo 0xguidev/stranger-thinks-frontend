@@ -6,5 +6,5 @@ Nesse projeto foram trabalhados as seguintes habilidades:
     Instalar, utilizar e aproveitar os principais recursos do PM2;
     Fazer deploy no Heroku aproveitando recursos de um process manager.
 
-alem de ser o 'front' e o 'back' está nesse link: 
+Este é o front end e o back end está nesse link: 
   https://github.com/tryber/sd-012-stranger-things  
